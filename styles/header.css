@@ -5,6 +5,7 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 
 }
 
@@ -26,4 +27,24 @@
 
 .lista-menu{
     display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.Lista-menu{
+    display: block;
+}
+
+.Lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.Lista-menu__Link{
+    background: var(--azul-degrade) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
