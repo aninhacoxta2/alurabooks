@@ -41,6 +41,11 @@
     background-color: var(--branco);
 }
 
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
 .Lista-menu__Link{
     background: var(--azul-degrade) ;
     -webkit-background-clip: text;
