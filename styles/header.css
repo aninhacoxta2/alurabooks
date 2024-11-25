@@ -5,8 +5,14 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+}
 
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer{
+   background-image: url("../img/Menu\ Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo{
+    background: var(--azul-degrade);
 }
 
 .cabeçalho{
@@ -14,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container{
@@ -36,7 +43,8 @@
     display: block;
 }
 
-.Lista-menu__titulo, .lista-menu__item{
+.Lista-menu__titulo, 
+.lista-menu__item{
     padding: 1em;
     background-color: var(--branco);
 }
